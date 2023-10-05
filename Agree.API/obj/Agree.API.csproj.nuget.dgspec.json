@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Learning\\Web App\\Agree.API\\Agree.API\\Agree.API.csproj": {}
+    "D:\\Learning\\Web API\\Agree.API\\Agree.API.csproj": {}
   },
   "projects": {
-    "D:\\Learning\\Web App\\Agree.API\\Agree.API\\Agree.API.csproj": {
+    "D:\\Learning\\Web API\\Agree.API\\Agree.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Learning\\Web App\\Agree.API\\Agree.API\\Agree.API.csproj",
+        "projectUniqueName": "D:\\Learning\\Web API\\Agree.API\\Agree.API.csproj",
         "projectName": "Agree.API",
-        "projectPath": "D:\\Learning\\Web App\\Agree.API\\Agree.API\\Agree.API.csproj",
+        "projectPath": "D:\\Learning\\Web API\\Agree.API\\Agree.API.csproj",
         "packagesPath": "C:\\Users\\AL5054\\.nuget\\packages\\",
-        "outputPath": "D:\\Learning\\Web App\\Agree.API\\Agree.API\\obj\\",
+        "outputPath": "D:\\Learning\\Web API\\Agree.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\AL5054\\AppData\\Roaming\\NuGet\\NuGet.Config",
