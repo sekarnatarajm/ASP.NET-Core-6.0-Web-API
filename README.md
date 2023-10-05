@@ -1,2 +1,2 @@
-# Learning.API
+# ASP.NET Core 6.0 API
 ASP.NET Core 6.0 API
