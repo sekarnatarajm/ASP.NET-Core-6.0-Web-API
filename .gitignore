@@ -1,9 +1,34 @@
-﻿################################################################################
-# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
-################################################################################
+# From .NET Core 3.0 you can use the command: `dotnet new gitignore` to generate a customizable .gitignore file
 
-/.vs/Agree.API/FileContentIndex/896ee06a-1675-4a40-b88d-e715b095c869.vsidx
-/.vs/Agree.API/FileContentIndex/896ee06a-1675-4a40-b88d-e715b095c869.vsidx
-/.vs/Agree.API/FileContentIndex/a426ebb1-a475-40b5-828a-c30313230e5b.vsidx
-/.vs/Agree.API/FileContentIndex/aa057471-b2a6-47ff-8edf-8552327ba6d7.vsidx
-/.vs/Agree.API/FileContentIndex/ba836b35-a6bb-4bcd-a8f1-221693da6550.vsidx
+*.swp
+*.*~
+project.lock.json
+.DS_Store
+*.pyc
+
+# Visual Studio Code
+.vscode
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+msbuild.log
+msbuild.err
+msbuild.wrn
+
+# Visual Studio 2015
+.vs/
