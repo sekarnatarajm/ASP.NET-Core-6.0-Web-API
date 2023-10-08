@@ -32,10 +32,17 @@ D:\Learning\Web API\Agree.API\bin\Debug\net6.0\Agree.API.deps.json
 D:\Learning\Web API\Agree.API\bin\Debug\net6.0\Agree.API.runtimeconfig.json
 D:\Learning\Web API\Agree.API\bin\Debug\net6.0\Agree.API.dll
 D:\Learning\Web API\Agree.API\bin\Debug\net6.0\Agree.API.pdb
+D:\Learning\Web API\Agree.API\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Learning\Web API\Agree.API\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Learning\Web API\Agree.API\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\Learning\Web API\Agree.API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\Learning\Web API\Agree.API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Learning\Web API\Agree.API\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
 D:\Learning\Web API\Agree.API\bin\Debug\net6.0\Microsoft.OpenApi.dll
 D:\Learning\Web API\Agree.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\Learning\Web API\Agree.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\Learning\Web API\Agree.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Learning\Web API\Agree.API\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
 D:\Learning\Web API\Agree.API\obj\Debug\net6.0\Agree.API.csproj.AssemblyReference.cache
 D:\Learning\Web API\Agree.API\obj\Debug\net6.0\Agree.API.GeneratedMSBuildEditorConfig.editorconfig
 D:\Learning\Web API\Agree.API\obj\Debug\net6.0\Agree.API.AssemblyInfoInputs.cache

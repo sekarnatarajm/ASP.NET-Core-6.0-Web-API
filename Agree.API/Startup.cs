@@ -1,18 +1,47 @@
-﻿namespace Agree.API
+﻿using Agree.API.Services;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+
+namespace Agree.API
 {
     public class Startup
     {
-        public IConfiguration configRoot
+        public IConfiguration config
         {
             get;
         }
         public Startup(IConfiguration configuration)
         {
-            configRoot = configuration;
+            config = configuration;
         }
         public void ConfigureServices(IServiceCollection services)
         {
+
+            services.AddTransient<IUserService, UserService>();
+            services.AddTransient<ITokenService, TokenService>();
             services.AddSwaggerGen();
+
+            services.AddAuthentication(auth =>
+            {
+                auth.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                auth.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+                auth.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+            }).AddJwtBearer(o =>
+            {
+                o.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
+                    ValidateLifetime = true,
+                    ValidateIssuerSigningKey = true,
+                    ValidIssuer = config["Jwt:Issuer"],
+                    ValidAudience = config["Jwt:Audience"],
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(config["Jwt:Key"])),
+                    ClockSkew = TimeSpan.Zero
+                };
+            });
+
             services.AddControllers();
             services.AddEndpointsApiExplorer();
         }
@@ -23,7 +52,12 @@
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
-            app.UseHttpsRedirection();  
+            app.UseHttpsRedirection();
+
+            app.UseAuthentication();
+            app.UseAuthorization();
+
+
             app.MapControllers();
             app.Run();
         }
