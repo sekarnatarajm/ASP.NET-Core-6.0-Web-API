@@ -19,7 +19,7 @@ namespace Agree.API.Services
         {
             var authClaims = new List<Claim>
                 {
-                    new Claim(ClaimTypes.Name, authenticatoin.UserName),
+                    new Claim(ClaimTypes.Name, authenticatoin.Username),
                     new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
                     new Claim(ClaimTypes.Email, "admin@gmail.com"),
                 };

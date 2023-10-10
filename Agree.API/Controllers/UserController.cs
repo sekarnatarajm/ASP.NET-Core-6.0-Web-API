@@ -17,7 +17,7 @@ namespace Agree.API.Controllers
             _userService = userService;
         }
 
-        [HttpPost]
+        [HttpPost("login")]
         public IActionResult Authentication([FromBody] Authenticatoin authenticatoin)
         {
             try
@@ -27,7 +27,7 @@ namespace Agree.API.Controllers
                 {
                     StatusCode = HttpStatusCode.OK,
                     Token = response,
-                    Username = authenticatoin.UserName,
+                    Username = authenticatoin.Username,
                     Email = "admin@gmail.com"
                 });
             }
