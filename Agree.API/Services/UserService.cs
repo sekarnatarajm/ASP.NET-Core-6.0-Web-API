@@ -12,7 +12,7 @@ namespace Agree.API.Services
 
         public string Authentication(Authenticatoin authenticatoin)
         {
-            if (!string.IsNullOrEmpty(authenticatoin.UserName))
+            if (!string.IsNullOrEmpty(authenticatoin.Username))
                return _tokenService.GenerateToken(authenticatoin);
             return "";
         }

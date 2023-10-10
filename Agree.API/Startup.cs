@@ -22,6 +22,17 @@ namespace Agree.API
             services.AddTransient<ITokenService, TokenService>();
             services.AddSwaggerGen();
 
+            services.AddCors(options =>
+            {
+                options.AddDefaultPolicy(
+                    builder =>
+                    {
+                        builder.WithOrigins("https://localhost:44351", "http://localhost:4200")
+                                            .AllowAnyHeader()
+                                            .AllowAnyMethod();
+                    });
+            });
+
             services.AddAuthentication(auth =>
             {
                 auth.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -53,6 +64,7 @@ namespace Agree.API
                 app.UseSwaggerUI();
             }
             app.UseHttpsRedirection();
+            app.UseCors();
 
             app.UseAuthentication();
             app.UseAuthorization();
